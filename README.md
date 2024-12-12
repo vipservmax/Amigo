@@ -1,6 +1,6 @@
-# Min
+# AmiGo
 
-Min is a fast, minimal browser that protects your privacy. It includes an interface designed to minimize distractions, and features such as:
+AmiGo is a fast, minimal browser that protects your privacy. It includes an interface designed to minimize distractions, and features such as:
 
 - Full-text search for visited pages
 - Ad and tracker blocking
@@ -15,7 +15,7 @@ Download Min from the [releases page](https://github.com/minbrowser/min/releases
 [![Downloads][DownloadsBadge]][DownloadsUrl]
 [![Discord][DiscordBadge]][DiscordUrl]
 
-Min is made possible by these sponsors:
+AmiGo is made possible by these sponsors:
 
 | [<img src="https://avatars.githubusercontent.com/u/6592155?v=4" width="40">](https://github.com/blackgwe) | [<img src="https://avatars.githubusercontent.com/u/49724477?v=4" width="40">](https://github.com/rafel-ioli) |[<img src="https://avatars.githubusercontent.com/u/237596?v=4" width="40">](https://github.com/idoru) |     |
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |--------------------------------------------------------------------------------------------------------------- | --- |
@@ -74,9 +74,9 @@ Depending on the platform you are building for, you may need to install addition
 - If you are building a macOS package, you'll need to install Xcode and the associated command-line tools. You may also need to set your default SDK to macOS 11.0 or higher, which you can do by running `export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk`. The exact command will depend on where Xcode is installed and which SDK version you're using.
 - To build on Windows, you'll need to install Visual Studio. Once it's installed, you may also need to run `npm config set msvs_version 2019` (or the appropriate version).
 
-## Contributing to Min
+## Contributing to AmiGo
 
-Thanks for taking the time to contribute to Min!
+Thanks for taking the time to contribute to AmiGo!
 
 ### Getting Help
 
