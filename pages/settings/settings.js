@@ -493,6 +493,9 @@ function formatKeyValue (value) {
     value = value.replace(/\bmod\b/g, 'ctrl')
     value = value.replace(/\boption\b/g, 'alt')
   }
+  if (navigator.platform === 'Win32') {
+    value = value.replace(/\bsuper\b/g, 'win')
+  }
   return value
 }
 
@@ -509,6 +512,7 @@ function parseKeyInput (input) {
     } else {
       e = e.replace(/\b(control)|(ctrl)\b/g, 'mod')
       e = e.replace(/\balt\b/g, 'option')
+      e = e.replace(/\bwin\b/g, 'super')
     }
     return e
   })
@@ -605,7 +609,9 @@ settings.get('customBangs', (value) => {
 
 document.getElementById('add-custom-bang').addEventListener('click', function () {
   const bangslist = document.getElementById('custom-bangs')
-  bangslist.appendChild(createBang())
+  const newListItem = createBang()
+  bangslist.appendChild(newListItem)
+  document.body.scrollBy(0, Math.round(newListItem.getBoundingClientRect().height))
 })
 
 function createBang (bang, snippet, redirect) {
